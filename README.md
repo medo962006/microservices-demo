@@ -37,7 +37,7 @@ All components run locally on Minikube, proving that the same principles apply t
 ### Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/microservices-demo.git
+   git clone https://github.com/medo962006/microservices-demo.git
    cd microservices-demo
    ```
 

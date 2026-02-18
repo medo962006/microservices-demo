@@ -1,0 +1,49 @@
+{
+  "dashboard": {
+    "title": "Online Boutique Frontend",
+    "tags": ["online-boutique", "kubernetes"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Frontend CPU Usage (5m rate)",
+        "type": "graph",
+        "datasource": "Prometheus",
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0},
+        "targets": [
+          {
+            "expr": "rate(container_cpu_usage_seconds_total{namespace=\"default\", pod=~\"frontend-.*\"}[5m])",
+            "legendFormat": "{{pod}} - CPU cores"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Frontend Memory Usage",
+        "type": "graph",
+        "datasource": "Prometheus",
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0},
+        "targets": [
+          {
+            "expr": "container_memory_working_set_bytes{namespace=\"default\", pod=~\"frontend-.*\"}",
+            "legendFormat": "{{pod}} - memory bytes"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Frontend Logs",
+        "type": "logs",
+        "datasource": "Loki",
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8},
+        "targets": [
+          {
+            "expr": "{container=\"server\", namespace=\"default\"}",
+            "refId": "A"
+          }
+        ]
+      }
+    ]
+  },
+  "overwrite": true
+}

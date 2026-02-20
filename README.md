@@ -1,6 +1,6 @@
 # Cloud-Native DevOps Platform: GitOps, CI/CD & Observability
 
-[![CI](https://github.com/YOUR_USERNAME/microservices-demo/actions/workflows/ci.yaml/badge.svg)](https://github.com/YOUR_USERNAME/microservices-demo/actions/workflows/ci.yaml)
+[![CI](https://github.com/medo962006/microservices-demo/actions/workflows/ci.yaml/badge.svg)](https://github.com/YOUR_USERNAME/microservices-demo/actions/workflows/ci.yaml)
 
 ## 📌 Overview
 This project demonstrates a complete DevOps pipeline for a microservices application on Kubernetes. It showcases:
@@ -37,7 +37,7 @@ All components run locally on Minikube, proving that the same principles apply t
 ### Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/microservices-demo.git
+   git clone https://github.com/medo962006/microservices-demo.git
    cd microservices-demo
    ```
 

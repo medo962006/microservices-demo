@@ -730,7 +730,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: medo1010/online-boutique-frontend:331003e
+          image: medo1010/online-boutique-frontend:73b3bea
           ports:
           - containerPort: 8080
           readinessProbe:
